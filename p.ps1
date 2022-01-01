@@ -2,6 +2,7 @@ param([switch]$c, [switch]$x)
 
 $BIN = "bin"
 $OBJ = "obj"
+$SRC = "src"
 $FN = "main"
 $OF = ".obj"
 $XF = ".exe"
@@ -9,7 +10,7 @@ $LF = ".c"
 
 if ($c -and -not $x)
 {
-    cl /Fo"$PSScriptRoot\$OBJ\$FN$OF" /Fe"$PSScriptRoot\$BIN\$FN$XF" "$FN$LF"
+    cl /Fo"$PSScriptRoot\$OBJ\$FN$OF" /Fe"$PSScriptRoot\$BIN\$FN$XF" "$SRC\$FN$LF"
 }
 elseif ($x -and -not $c)
 {
