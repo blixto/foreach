@@ -13,6 +13,6 @@ main(void)
     foreach(c,i,array,char)
         putchar(i);
     putchar('\n');
-    peintf("Number of elements: %d\n", c);
+    printf("Number of elements: %d\n", c);
     return OK;
 }

@@ -14,7 +14,7 @@ if ($c -and -not $x)
 }
 elseif ($x -and -not $c)
 {
-    Start-Process "$PSScriptRoot\bin\$FN$XF"
+    Start-Process "$PSScriptRoot\$BIN\$FN$XF" -NoNewWindow
 }
 else
 {
