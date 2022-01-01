@@ -12,7 +12,7 @@ main(void)
     char i;
     foreach(c,i,array,char)
         putchar(i);
-    putchar('\n');
-    printf("Number of elements: %d\n", c);
+    printf("\r\n");
+    printf("Number of elements: %d\r\n", c);
     return OK;
 }
