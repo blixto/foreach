@@ -14,5 +14,6 @@ main(void)
         putchar(i);
     printf("\r\n");
     printf("Number of elements: %d\r\n", c);
+    
     return OK;
 }
